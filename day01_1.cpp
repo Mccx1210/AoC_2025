@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    ifstream archivo("test_cases/dia_1_1.txt");
+    ifstream archivo("test_cases/dia_1.txt");
 
     if (!archivo) {
         cerr << "Test file not found.\n";
@@ -37,14 +37,14 @@ int main() {
             if (pos_aguja == 0) count++;
         }
         else {
-            cerr << "Direccion no valida: " << dir << '\n';
+            cerr << "Invalid direction: " << dir << '\n';
             return 2;
         }
     }
 
     archivo.close();
 
-    cout << count << " veces en cero.\n";
+    cout << count << " times on zero.\n";
 
     return 0;
 }
